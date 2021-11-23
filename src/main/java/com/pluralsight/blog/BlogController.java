@@ -28,7 +28,7 @@ public class BlogController {
         List<Post> posts = postRepository.findAll();
         modelMap.put("posts", posts);
         List<Category> categories = categoryRepository.findAll();
-        modelMap.put("categories", posts);
+        modelMap.put("categories", categories);
         return "home";
     }
 
